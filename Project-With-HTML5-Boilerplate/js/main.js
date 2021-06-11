@@ -68,7 +68,7 @@ var bannerJson = {
               backgroundColor: { type: "solid", scolor: "#212121" },
               backgroundOverColor: "#212121",
               labelStyle: {
-                fontFamily: "monospace",
+                fontFamily: "Fjalla One",
                 fontDesign: "400",
                 fontStyle: "normal",
                 fontType: "google",
@@ -144,7 +144,7 @@ var bannerJson = {
               text: "NIKES ON FIRE",
               fontType: "google",
               fontUrl: null,
-              fontFamily: "monospace",
+              fontFamily: "Fjalla One",
               fontDesign: "400",
               fontWeight: "400",
               fontStyle: "normal",
@@ -218,7 +218,7 @@ var bannerJson = {
               text: "THIS MONDAY",
               fontType: "google",
               fontUrl: null,
-              fontFamily: "monospace",
+              fontFamily: "Fjalla One",
               fontDesign: "400",
               fontWeight: "400",
               fontStyle: "normal",
@@ -351,7 +351,7 @@ var bannerJson = {
               actions: [],
               visible: true,
               backgroundColor: null,
-              localUrl: "logo.png",
+              localUrl: "../img/images/logo.png",
             },
             oId: 3,
             eh: "ipe9h01td3rf6r",
@@ -368,8 +368,8 @@ var bannerJson = {
   },
 };
 var bannerConfig = {
-  photosUrl: "../img/",
-  embedUrl: "../img/",
+  photosUrl: "",
+  embedUrl: "",
   startSlide: 0,
   noAnimation: false,
   preview: false,
@@ -379,6 +379,7 @@ var bannerConfig = {
   download: false,
   env: "live",
 };
+
 var embedCanvas = new EmbedCanvas();
 document.addEventListener("DOMContentLoaded", function () {
   embedCanvas.init(document.getElementById("bs"), bannerJson, bannerConfig);
